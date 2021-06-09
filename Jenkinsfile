@@ -1,6 +1,6 @@
  pipeline {
     agent any
-   
+     stages {
             stage('Robot') {
             steps {
             	catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
@@ -28,6 +28,7 @@
             }
         }
     }
+ }
 
    /* post{
         success{
