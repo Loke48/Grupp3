@@ -4,7 +4,7 @@
             stage('Robot') {
             steps {
             	catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                	sh 'robot --variable BROWSER:headlesschrome -d spring-petclinic-angular/Robotframework/Tests/Results spring-petclinic-angular/Robotframework/Tests'
+                	sh 'robot --variable BROWSER:headlesschrome -d RobotFW/Tester/Results RobotFW/Tester'
                 }
             }
             post {
@@ -13,7 +13,7 @@
                         step(
                             [
                                 $class                  :   'RobotPublisher',
-                                outputPath              :   'spring-petclinic-angular/Robotframework/Tests/Results',
+                                outputPath              :   'RobotFW/Tester/Results',
                                 outputFileName          :   '**/output.xml',
                                 reportFileName          :   '**/report.html',
                                 logFileName             :   '**/log.html',
