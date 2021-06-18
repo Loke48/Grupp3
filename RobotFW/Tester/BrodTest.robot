@@ -1,7 +1,7 @@
 *** Settings ***
 
 Documentation                               Infotiv Petclinic Performance Test
-Resource                                    ../Resources/MatGladkeywords.robot
+Resource                                    RobotFW/Resources/MatGladkeywords.robot
 Library                                     SeleniumLibrary
 Test Setup                                  Begin WebTest
 Test Teardown                               End Web Test
