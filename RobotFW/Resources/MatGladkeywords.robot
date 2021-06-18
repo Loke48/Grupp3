@@ -57,8 +57,8 @@ Click Meny
 
 Click Frukost
 
-    Set Selenium Speed                                0.5s
-    Click Element                                     xpath://*[@id="recipe-categories-container"]/collection-view/ul/li[14]
+    Sleep                                             2s
+    Click Element                                     xpath://*[@id="recipe-categories-container"]/collection-view/ul/li[14]/a/div
     ${actualFrukost}                                  get text                          xpath:/html/body/div/navigation-bar/div/h1
     Should Be Equal                                   ${Frukost_Message}                ${actualFrukost}
 
