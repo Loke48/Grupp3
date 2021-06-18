@@ -1,7 +1,7 @@
 *** Settings ***
 
 Documentation                               Testar Selenium och RobotFramework
-Resource                                    RobotFW/Resources/MatGladkeywords.robot
+Resource                                    ../Resources/MatGladkeywords.robot
 Library                                     SeleniumLibrary
 Test Setup                                  Begin Web Test
 Test Teardown                               End Web Test

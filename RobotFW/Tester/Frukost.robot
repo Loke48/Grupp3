@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation                   UI testing in MatGlad by Robot Framework
 ...                             this is to test funcitionalities of Owners -- Eli
-Resource                        RobotFW/Resources/MatGladkeywords.robot
+Resource                        ../Resources/MatGladkeywords.robot
 Library                         SeleniumLibrary
 Test Setup                      Begin WebTest
 Test Teardown                   End Web Test 
